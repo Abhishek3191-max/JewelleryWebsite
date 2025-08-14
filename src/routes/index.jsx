@@ -7,7 +7,10 @@ import DynamicProductListingPage from '../components/pages/jewelleryProductPage'
 import ProfileDashboard from '../components/pages/profile'
 import ProductPage from '../components/pages/productDetailsPage'
 import ShoppingCart from '../components/pages/cart'
-import CheckoutHeader from '../components/pages/checkout'
+import CheckoutHeader from '../components/pages/checkout' 
+import AdminLayout from '../components/layout'
+import AdminLoginPage from '../components/admin_layout/admin_login'
+
 
 
 
@@ -49,7 +52,16 @@ const router = createBrowserRouter([
             {
                 path:"/checkout",
                 element:<CheckoutHeader/>
+            },
+             {
+                path:"/admin",
+                element:<AdminLayout/>
+            },
+             {
+                path:"/admin-loginpage",
+                element:<AdminLoginPage/>
             }
+           
            
            
         ]
