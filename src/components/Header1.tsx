@@ -36,14 +36,14 @@ export default function Header() {
   // const handleUserClick = () => {
   //   navigate('/login');
   // };
-
+ 
   return (
     <header className="bg-white shadow-sm border-b border-gray-200">
       {/* Remove all horizontal padding and use full width */}
       <div className="w-full">
         <div className="flex items-center justify-between h-16 px-2">
           {/* Logo - close to left edge */}
-          <Link to={"/"} className="flex-shrink-0 pl-2">
+          <Link to={"/admin-loginpage"} className="flex-shrink-0 pl-2">
             <BrandLogo />
           </Link>
 
