@@ -4,7 +4,7 @@ import UserManagementTab from './admin_layout/usermanagement_tab'; // Corrected 
 import RolePermissionsTab from './admin_layout/role_tab';
 import { User } from 'lucide-react';
 import ProductsTab from './admin_layout/product_tab';
-import PermissionsTab from './admin_layout/permissions_Tab';
+// import PermissionsTab from './admin_layout/permissions_Tab';
 
 const AdminPanel = () => {
   const [sidebarOpen, setSidebarOpen] = useState(true);
@@ -233,10 +233,21 @@ const AdminPanel = () => {
   <StoreManagementTab/>
   <UserManagementTab/>
   <RolePermissionsTab/>
-  <PermissionsTab/>
+  {/* <PermissionsTab/> */}
   <ProductsTab/>
   </>
 
+  
+const PermissionsTab = () => (
+    <div className="p-6">
+      <h1 className="text-3xl font-bold text-gray-800 mb-6">Reports</h1>
+      <div className="bg-white p-8 rounded-lg shadow-sm border text-center">
+        <div className="text-6xl mb-4">📊</div>
+        <p className="text-xl text-gray-600 mb-2">Analytics & Reports</p>
+        <p className="text-gray-500">Analytics and reporting dashboard will be implemented here.</p>
+      </div>
+    </div>
+  );
 
   
   // Product Categories Tab
