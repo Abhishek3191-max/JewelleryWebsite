@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import StoreManagementTab from './admin_layout/store_mangement';
 import UserManagementTab from './admin_layout/usermanagement_tab'; // Corrected import path
 import RolePermissionsTab from './admin_layout/role_tab';
-import Permissions_tab from './admin_layout/permissions_Tab';
+import Permissions_tab from './admin_layout/permissions_tab'; // Corrected import path
 import { User } from 'lucide-react';
 import ProductsTab from './admin_layout/product_tab';
 
