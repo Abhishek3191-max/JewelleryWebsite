@@ -4,7 +4,7 @@ import UserManagementTab from './admin_layout/usermanagement_tab'; // Corrected 
 import RolePermissionsTab from './admin_layout/role_tab';
 import { User } from 'lucide-react';
 import ProductsTab from './admin_layout/product_tab';
-// import PermissionsTab from './admin_layout/permissions_Tab';
+
 
 const AdminPanel = () => {
   const [sidebarOpen, setSidebarOpen] = useState(true);
@@ -237,7 +237,7 @@ const AdminPanel = () => {
   <ProductsTab/>
   </>
 
-  
+
 const PermissionsTab = () => (
     <div className="p-6">
       <h1 className="text-3xl font-bold text-gray-800 mb-6">Reports</h1>
