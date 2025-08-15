@@ -4,6 +4,7 @@ import UserManagementTab from './admin_layout/usermanagement_tab'; // Corrected 
 import RolePermissionsTab from './admin_layout/role_tab';
 import Permissions_tab from './admin_layout/permissions_Tab';
 import { User } from 'lucide-react';
+import ProductsTab from './admin_layout/product_tab';
 
 const AdminPanel = () => {
   const [sidebarOpen, setSidebarOpen] = useState(true);
@@ -233,6 +234,7 @@ const AdminPanel = () => {
   <UserManagementTab/>
   <RolePermissionsTab/>
   <Permissions_tab/>
+  <ProductsTab/>
   </>
   
 
@@ -288,16 +290,16 @@ const AdminPanel = () => {
   );
 
   // Other Demo Tabs
-  const ProductsTab = () => (
-    <div className="p-6">
-      <h1 className="text-3xl font-bold text-gray-800 mb-6">Products</h1>
-      <div className="bg-white p-8 rounded-lg shadow-sm border text-center">
-        <div className="text-6xl mb-4">📦</div>
-        <p className="text-xl text-gray-600 mb-2">Products Management</p>
-        <p className="text-gray-500">This section will handle product inventory, pricing, and details.</p>
-      </div>
-    </div>
-  );
+  // const ProductsTab = () => (
+  //   <div className="p-6">
+  //     <h1 className="text-3xl font-bold text-gray-800 mb-6">Products</h1>
+  //     <div className="bg-white p-8 rounded-lg shadow-sm border text-center">
+  //       <div className="text-6xl mb-4">📦</div>
+  //       <p className="text-xl text-gray-600 mb-2">Products Management</p>
+  //       <p className="text-gray-500">This section will handle product inventory, pricing, and details.</p>
+  //     </div>
+  //   </div>
+  // );
 
   const ReportsTab = () => (
     <div className="p-6">
