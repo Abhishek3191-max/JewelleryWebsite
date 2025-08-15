@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import StoreManagementTab from './admin_layout/store_mangement';
 import UserManagementTab from './admin_layout/usermanagement_tab'; // Corrected import path
 import RolePermissionsTab from './admin_layout/role_tab';
-import Permissions_tab from './admin_layout/permissions_tab'; // Corrected import path
+// import Permissions_tab from './admin_layout/permissions_tab';
+ 
 import { User } from 'lucide-react';
 import ProductsTab from './admin_layout/product_tab';
+import PermissionsTab from './admin_layout/permissions_Tab';
 
 const AdminPanel = () => {
   const [sidebarOpen, setSidebarOpen] = useState(true);
@@ -233,10 +235,10 @@ const AdminPanel = () => {
   <StoreManagementTab/>
   <UserManagementTab/>
   <RolePermissionsTab/>
-  <Permissions_tab/>
+  <PermissionsTab/>
   <ProductsTab/>
   </>
-  
+
 
   
   // Product Categories Tab
