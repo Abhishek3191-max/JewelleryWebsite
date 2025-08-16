@@ -22,23 +22,7 @@ const AdminPanel = () => {
     activeRoles: 5
   };
 
-  // const demoStores = [
-  //   { id: 1, name: 'Main Store', address: 'Delhi', contact: '9876543210', email: 'main@store.com', status: 'Active' },
-  //   { id: 2, name: 'Branch Store', address: 'Mumbai', contact: '9876543211', email: 'branch@store.com', status: 'Active' },
-  //   { id: 3, name: 'Online Store', address: 'Bangalore', contact: '9876543212', email: 'online@store.com', status: 'Inactive' }
-  // ];
-
-  // const demoUsers = [
-  //   { id: 1, name: 'John Doe', email: 'john@store.com', phone: '9876543210', role: 'Manager', store: 'Main Store', status: 'Active' },
-  //   { id: 2, name: 'Jane Smith', email: 'jane@store.com', phone: '9876543211', role: 'Staff', store: 'Branch Store', status: 'Active' },
-  //   { id: 3, name: 'Mike Johnson', email: 'mike@store.com', phone: '9876543212', role: 'Supervisor', store: 'Online Store', status: 'Inactive' }
-  // ];
-
-  // const demoRoles = [
-  //   { id: 1, name: 'Store Manager', description: 'Manages store operations', permissions: 8, status: 'Active' },
-  //   { id: 2, name: 'Sales Staff', description: 'Handles sales operations', permissions: 4, status: 'Active' },
-  //   { id: 3, name: 'Supervisor', description: 'Supervises daily activities', permissions: 6, status: 'Active' }
-  // ];
+  
 
   const demoCategories = [
     { id: 1, name: 'Electronics', description: 'Electronic products and gadgets', parent: 'Root', products: 15, status: 'Active' },
@@ -233,21 +217,11 @@ const AdminPanel = () => {
   <StoreManagementTab/>
   <UserManagementTab/>
   <RolePermissionsTab/>
-  {/* <PermissionsTab/> */}
+ 
   <ProductsTab/>
   </>
 
 
-const PermissionsTab = () => (
-    <div className="p-6">
-      <h1 className="text-3xl font-bold text-gray-800 mb-6">Reports</h1>
-      <div className="bg-white p-8 rounded-lg shadow-sm border text-center">
-        <div className="text-6xl mb-4">📊</div>
-        <p className="text-xl text-gray-600 mb-2">Analytics & Reports</p>
-        <p className="text-gray-500">Analytics and reporting dashboard will be implemented here.</p>
-      </div>
-    </div>
-  );
 
   
   // Product Categories Tab
@@ -417,7 +391,7 @@ const PermissionsTab = () => (
       case 'stores': return userRole === 'superadmin' ? <StoreManagementTab /> : <div className="p-6 text-center text-red-600">Access Denied - Super Admin Only</div>;
       case 'users': return userRole === 'superadmin' ? <UserManagementTab /> : <div className="p-6 text-center text-red-600">Access Denied - Super Admin Only</div>;
       case 'roles': return userRole === 'superadmin' ? <RolePermissionsTab /> : <div className="p-6 text-center text-red-600">Access Denied - Super Admin Only</div>;
-      case 'permissions': return <PermissionsTab/>
+    
       case 'categories': return <ProductCategoriesTab />;
       case 'products': return <ProductsTab />;
       case 'reports': return <ReportsTab />;
