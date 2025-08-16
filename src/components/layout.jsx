@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import StoreManagementTab from './admin_layout/store_mangement';
 import UserManagementTab from './admin_layout/usermanagement_tab'; // Corrected import path
-import RolePermissionsTab from './admin_layout/role_tab';
+import RoleTab from './admin_layout/role_tab'; // Corrected import path
 import { User } from 'lucide-react';
 import ProductsTab from './admin_layout/product_tab';
+import PermissionsTab from './admin_layout/permissions_Tab'; // Ensure this import is correct 
 
 
 const AdminPanel = () => {
@@ -216,10 +217,11 @@ const AdminPanel = () => {
   <>
   <StoreManagementTab/>
   <UserManagementTab/>
-  <RolePermissionsTab/>
- 
+  <RoleTab/>
+  <PermissionsTab/>
   <ProductsTab/>
   </>
+
 
 
 
@@ -390,8 +392,8 @@ const AdminPanel = () => {
       case 'dashboard': return <DashboardTab />;
       case 'stores': return userRole === 'superadmin' ? <StoreManagementTab /> : <div className="p-6 text-center text-red-600">Access Denied - Super Admin Only</div>;
       case 'users': return userRole === 'superadmin' ? <UserManagementTab /> : <div className="p-6 text-center text-red-600">Access Denied - Super Admin Only</div>;
-      case 'roles': return userRole === 'superadmin' ? <RolePermissionsTab /> : <div className="p-6 text-center text-red-600">Access Denied - Super Admin Only</div>;
-    
+      case 'roles': return userRole === 'superadmin' ? <RoleTab /> : <div className="p-6 text-center text-red-600">Access Denied - Super Admin Only</div>;
+       case 'permissions': return <PermissionsTab />;
       case 'categories': return <ProductCategoriesTab />;
       case 'products': return <ProductsTab />;
       case 'reports': return <ReportsTab />;

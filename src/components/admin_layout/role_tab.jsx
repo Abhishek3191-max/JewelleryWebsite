@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import CryptoJS from 'crypto-js';
 
-const RolePermissionsTab = () => {
+const RoleTab = () => {
   const [roles, setRoles] = useState([]);
   const [loading, setLoading] = useState(false);
   const [showAddModal, setShowAddModal] = useState(false);
@@ -458,4 +458,4 @@ const RolePermissionsTab = () => {
   );
 };
 
-export default RolePermissionsTab;
+export default RoleTab;
