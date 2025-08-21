@@ -7,8 +7,10 @@ function App() {
   return (
     <>
      
-     <main> <Outlet/></main>
-    
+     
+     <div className="min-h-screen overflow-x-hidden max-w-full">
+       <main> <Outlet/></main>
+    </div>
     </>
   );
 }

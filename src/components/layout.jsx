@@ -5,6 +5,7 @@ import RoleTab from './admin_layout/role_tab'; // Corrected import path
 import { User } from 'lucide-react';
 import ProductsTab from './admin_layout/product_tab';
 import PermissionsTab from './admin_layout/permissions_Tab'; // Ensure this import is correct 
+import OrdersComponent from './admin_order';
 
 
 const AdminPanel = () => {
@@ -39,6 +40,7 @@ const AdminPanel = () => {
     { id: 'permissions', label: 'Permissions', icon: '🔐', roles: ['superadmin'] },
     { id: 'categories', label: 'Product Categories', icon: '📂', roles: ['superadmin', 'admin', 'user'] },
     { id: 'products', label: 'Products', icon: '📦', roles: ['superadmin', 'admin', 'user'] },
+    { id: 'orders', label: 'Orders', icon: '🛒', roles: ['superadmin', 'admin', 'user'] },
     { id: 'reports', label: 'Reports', icon: '📈', roles: ['superadmin', 'admin'] },
     { id: 'settings', label: 'Settings', icon: '⚙️', roles: ['superadmin', 'admin', 'user'] },
     { id: 'profile', label: 'Profile', icon: '👤', roles: ['superadmin', 'admin', 'user'] }
@@ -396,6 +398,7 @@ const AdminPanel = () => {
        case 'permissions': return <PermissionsTab />;
       case 'categories': return <ProductCategoriesTab />;
       case 'products': return <ProductsTab />;
+      case 'orders': return <OrdersComponent/>;
       case 'reports': return <ReportsTab />;
       case 'settings': return <SettingsTab />;
       case 'profile': return <ProfileTab />;

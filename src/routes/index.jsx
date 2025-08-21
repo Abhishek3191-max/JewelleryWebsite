@@ -10,6 +10,7 @@ import ShoppingCart from '../components/pages/cart'
 import CheckoutHeader from '../components/pages/checkout' 
 import AdminLayout from '../components/layout'
 import AdminLoginPage from '../components/admin_layout/admin_login'
+import OrdersComponent from '../components/admin_order'
 
 
 
@@ -60,6 +61,10 @@ const router = createBrowserRouter([
              {
                 path:"/admin-loginpage",
                 element:<AdminLoginPage/>
+            },
+            {
+                path:"/admin_order",
+                element:<OrdersComponent/>
             }
            
            

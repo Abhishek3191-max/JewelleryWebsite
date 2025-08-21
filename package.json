@@ -23,6 +23,8 @@
     "react-dom": "^19.1.0",
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.6.2",
+    "react-slick": "^0.31.0",
+    "slick-carousel": "^1.8.1",
     "tanstack": "^1.0.3",
     "yup": "^1.7.0"
   },
